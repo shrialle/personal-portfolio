@@ -1,0 +1,11 @@
+h1 {
+    color: red;
+}
+
+/*
+    RGB : Red, Green, Blue ✅
+    rgb(0,0,0) : 0-Red, 0-Green, 0-Blue
+*/
+p {
+    color: rgb(255, 0, 255);
+}
