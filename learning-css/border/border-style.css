@@ -1,0 +1,22 @@
+.section-1 {
+    word-spacing: 2px;
+    line-height: 20px;
+    width: 1000px;
+    color: #fff;
+    background-color: #5e9de9;
+    /* border: 10px solid #003180; */
+
+    /* border-width: 10px;
+    border-style: solid;
+    border-color: #003180; */
+
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: #5e9de9;
+    border-radius: 47% 100% 100% 100% / 0% 100% 0% 100%;
+    background-image: linear-gradient(to right top,
+            #845EC2, #D65DB1, #FF6F91, #FF9671, #FFC75F, #F9F871);
+}

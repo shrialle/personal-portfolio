@@ -1,0 +1,18 @@
+p {
+    width: 500px;
+    word-spacing: 5px;
+    background-color: aqua;
+    border: 4px solid red;
+
+    padding: 100px;
+
+    /* padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px; */
+
+    /* padding: top, right, bottom, left */
+
+    /* Top-Bottom: 10px and Left-Right: 15px */
+    /* padding: 10px 15px; */
+}
