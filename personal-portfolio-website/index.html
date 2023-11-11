@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - Shriniwas Alle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.png" class="logo" alt="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Sr QA Engineer</p>
+                <h1>Hi, I'm <span>Shriniwas&nbsp;</span><br>Alle from Pune</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------- About Section ----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui eaque sunt quaerat doloremque cum
+                        sed quas corporis debitis, voluptas eos rerum, neque saepe officiis consequatur distinctio
+                        inventore optio reiciendis deleniti voluptates. Et, unde minima error, dicta saepe, porro
+                        consequuntur harum dolores provident repellendus consectetur officiis?
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX1</span><br>Designing Web Apps</li>
+                            <li><span>Web Development1</span><br>Web App Development1</li>
+                            <li><span>Web Development1</span><br>Web App Development1</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX2</span><br>Designing Web Apps2</li>
+                            <li><span>Web Development1</span><br>Web App Development2</li>
+                            <li><span>Web Development2</span><br>Web App Development2</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>UI/UX3</span><br>Designing Web Apps3</li>
+                            <li><span>Web Development3</span><br>Web App Development3</li>
+                            <li><span>Web Development3</span><br>Web App Development3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    var tabLinks = document.getElementsByClassName("tab-links")
+    var tabContents = document.getElementsByClassName("tab-contents")
+
+
+    function opentab(tabName) {
+
+        for (tabLink of tabLinks) {
+            tabLink.classList.remove("active-link")
+        }
+
+        for (tabContent of tabContents) {
+            tabContent.classList.remove("active-tab")
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+    }
+
+</script>
+
+</html>
