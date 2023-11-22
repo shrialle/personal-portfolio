@@ -14,15 +14,15 @@
         <div class="container">
             <nav>
                 <img src="images/logo1.png" class="logo" alt="logo">
-                <ul>
+                <ul id="side-menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark"></i>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Sr QA Engineer</p>
@@ -182,6 +182,7 @@
                         <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
+                    <span id="mesg"></span>
                 </div>
             </div>
         </div>
@@ -192,7 +193,6 @@
     <script>
         var tabLinks = document.getElementsByClassName("tab-links")
         var tabContents = document.getElementsByClassName("tab-contents")
-
 
         function opentab(tabName) {
 
@@ -207,6 +207,28 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabName).classList.add("active-tab");
         }
+
+    </script>
+
+    <script>
+        var sideMenu = document.getElementById("side-menu");
+        function openMenu() {
+            sideMenu.style.right = "0";
+        }
+
+        function closeMenu() {
+            sideMenu.style.right = "-2000px";
+        }
+    </script>
+
+    <script>
+        var mesg = document.getElementById("mesg")
+
+        mesg.innerHTML = "Message sent successfully"
+
+        setTimeout(function () {
+            mesg.innerHTML = ""
+        }, 5000)
 
     </script>
 </body>
