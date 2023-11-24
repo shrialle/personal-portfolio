@@ -7,6 +7,7 @@
     <title>Personal Portfolio - Shriniwas Alle</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a3d27957c9.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 
 <body>
@@ -26,7 +27,8 @@
             </nav>
             <div class="header-text">
                 <p>Sr QA Engineer</p>
-                <h1>Hi, I'm <span>Shri</span>niwas&nbsp;<br>Alle from Pune</h1>
+                <h1>Hi, My name is <span>Shriniwas&nbsp;</span><br> and I am a passionate</h1>
+                <span id="element"></span>
             </div>
         </div>
     </div>
@@ -230,6 +232,13 @@
             mesg.innerHTML = ""
         }, 5000)
 
+    </script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<b><i>Quality Engineer</i></b>', '<b><i>Front End Developer</i></b>', '&amp; <b><i>Web Automation Trainer</i></b>'],
+            typeSpeed: 50,
+        });
     </script>
 </body>
 
